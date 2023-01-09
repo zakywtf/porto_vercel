@@ -1,0 +1,277 @@
+doctype html
+html
+	title Personal Website
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1")
+	link(rel="stylesheet", href="https://www.w3schools.com/w3css/4/w3.css")
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/css/style.css")
+	// Colums
+	link(rel="stylesheet", href="assets/css/colums.css")
+	// Animated
+	link(rel="stylesheet", href="assets/css/animated.css")
+	link(href="https://fonts.googleapis.com/css?family=Space+Mono", rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Kaushan+Script", rel="stylesheet")
+	body.w3-black
+		// Icon Bar (Sidebar - hidden on small screens)
+		nav.w3-sidebar.w3-bar-block.w3-small.w3-hide-small.w3-center
+			// Avatar image in top left corner
+			a.w3-bar-item.w3-button.w3-padding-large.w3-black(href="#")
+				i.fa.fa-home.w3-xxlarge
+				p HOME
+			a.w3-bar-item.w3-button.w3-padding-large.w3-hover-black(href="#about")
+				i.fa.fa-user.w3-xxlarge
+				p ABOUT
+			a.w3-bar-item.w3-button.w3-padding-large.w3-hover-black(href="#experiences")
+				i.fa.fa-briefcase.w3-xxlarge
+				p EXPERIENCES
+			//
+				<a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+				<i class="fa fa-tasks w3-xxlarge"></i>
+				<p>PROJECTS</p>
+				</a>
+			a.w3-bar-item.w3-button.w3-padding-large.w3-hover-black(href="#contact")
+				i.fa.fa-envelope.w3-xxlarge
+				p CONTACT
+		// Navbar on small screens (Hidden on medium and large screens)
+		#myNavbar.w3-top.w3-hide-large.w3-hide-medium
+			.w3-bar.w3-black.w3-opacity.w3-hover-opacity-off.w3-center.w3-small
+				a.w3-bar-item.w3-button(href="#", style="width:20% !important") HOME
+				a.w3-bar-item.w3-button(href="#about", style="width:20% !important") ABOUT
+				a.w3-bar-item.w3-button(href="#experiences", style="width:20% !important") EXPERIENCES
+				// <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+				a.w3-bar-item.w3-button(href="#contact", style="width:20% !important") CONTACT
+		// Page Content
+		#main.w3-padding-large
+			// Header/Home
+			header#home.w3-container.w3-padding-32.w3-center.w3-black.display-t.full-height
+				img.img-rounded.img-circle.w3-hover-sepia(src="assets/images/users/pp7.jpg", alt="avatar", onclick="document.getElementById('id01').style.display='block'")
+				.display-tc.animated.bounce
+					h1
+						span Nova Zaky Fathoni
+				h4
+					span Backend Developer
+				p  &quot;The only way to do great work is to love what you do.&quot; - 
+					i Steve Jobs
+				br
+				.w3-justify.w3-text-grey.w3-center
+					i.fa.fa-instagram.w3-hover-opacity
+					i.fa.fa-twitter.w3-hover-opacity
+					i.fa.fa-facebook-official.w3-hover-opacity
+					i.fa.fa-github.w3-hover-opacity
+					p.w3-medium
+						span
+							strong zakywtf
+							| - Copyright © 2023
+					// End div
+			// About Section
+			#about.w3-content.w3-justify.w3-text-grey.w3-padding-64
+				h2.w3-text-light-grey About Me
+				hr.w3-opacity(style="width:185px")
+				.row
+					.col-lg-5
+						.w3-section
+							p
+								i.fa.fa-calendar.fa-fw.w3-text-white.w3-xxsmall.w3-margin-right
+								| Gunungkidul, 20 November 1996
+							p
+								i.fa.fa-map-marker.fa-fw.w3-text-white.w3-xxsmall.w3-margin-right
+								| Klumpit, Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881
+							p
+								i.fa.fa-phone.fa-fw.w3-text-white.w3-xxsmall.w3-margin-right
+								| +62 83-867-810-825
+							p
+								i.fa.fa-envelope.fa-fw.w3-text-white.w3-xxsmall.w3-margin-right
+								| novazaky1@gmail.com
+						br
+					.col-lg-7
+						h3 Hello There!
+						p
+							| My name is
+							strong Nova Zaky Fathoni
+							| . I&apos;m a back-end developer focused on building the process behind an apps. I&apos;m passionate about building amazing software that improves the lives of the people around me.
+				h3.w3-padding-16.w3-text-light-grey My Skills
+				p.w3-wide Express.js
+				.w3-white
+					.w3-dark-grey(style="height:28px;width:95%")
+				p.w3-wide MongoDB
+				.w3-white
+					.w3-dark-grey(style="height:28px;width:95%")
+				p.w3-wide Payment Gateway
+				.w3-white
+					.w3-dark-grey(style="height:28px;width:80%")
+				br
+				br
+				.w3-row.w3-center.w3-padding-16.w3-section.w3-light-grey
+					.row
+						.col-lg-4
+							.w3-duo.w3-section
+								span.w3-xlarge 3
+								br
+								| Partners
+						.col-lg-4
+							.w3-duo.w3-section
+								span.w3-xlarge 14
+								br
+								| Projects Done
+						.col-lg-4
+							.w3-duo.w3-section
+								span.w3-xlarge 2
+								br
+								| Projects On Going
+				//
+					<button class="w3-button w3-light-grey w3-padding-large w3-section">
+					<i class="fa fa-download"></i> Download Resume
+					</button>
+				// End About Section
+			// Experiences Section
+			#experiences.w3-padding-64.w3-content
+				h2.w3-text-light-grey My Experiences
+				hr.w3-opacity(style="width:270px")
+				.timeline
+					.box.left
+						.content
+							.row
+								.col-lg-3
+									img.img-thumbnail.img-rounded(src="assets/images/experiences/beehive.png", alt="experiences", width="100%", height="200px")
+								.col-lg-9
+									h5
+										strong PT. Aerotek Global Inovasi
+									i(style="font-size: small;")  March 2022 - Now
+							hr
+							.row
+								.col-lg-12
+									p Produces drone system, IoT sensors, surveillance system, and tracking management systems.
+									p That I&apos;ve been working on : 
+									ul
+										li Backend for tandhur.id
+										li Backend for Transponder System
+									p
+										i.fa.fa-globe
+										a(href="https://beehivedrones.com/", target="_blank", style="text-decoration: none;")  &amp;nbsp;&amp;nbsp;&amp;nbsp; beehivedrones.com
+									p
+										i.fa.fa-map-marker
+										| &amp;nbsp;&amp;nbsp;&amp;nbsp; Jalan Arjuna 4B Wirobrajan, Yogyakarta 55252
+					.box.right
+						.content
+							.content
+								.row
+									.col-lg-3
+										img.img-thumbnail.img-rounded(src="assets/images/experiences/gincode.jpg", alt="experiences", width="100%", height="200px")
+									.col-lg-9
+										h5
+											strong PT. Gincode Teknologi Nusantara
+										i(style="font-size: small;")  October 2020 - March 2022
+								hr
+								.row
+									.col-lg-12
+										p PT. Gincode Teknologi Nusantara is a start-up company or softwarehouse.
+										p That I&apos;ve been working on : 
+										ul
+											li Backend for Pertamina Assets from PT. Indotrans Sejahtera
+											li Backend for Idepreneurs Club system
+											li Backend for Rental toys
+											li Backend for online invitation
+											li Backend for QR Scanner
+											li Backend for Roemahku
+										p
+											i.fa.fa-globe
+											a(href="https://gincodeteknologi.com/", target="_blank", style="text-decoration: none;")  &amp;nbsp;&amp;nbsp;&amp;nbsp; gincodeteknologi.com
+										p
+											i.fa.fa-map-marker
+											| &amp;nbsp;&amp;nbsp;&amp;nbsp;  Jl. Cipaku Indah V No.21, Ledeng, Kec. Cidadap, Kota Bandung, Jawa Barat 40143
+					.box.left
+						.content
+							.row
+								.col-lg-3
+									img.img-thumbnail.img-rounded(src="assets/images/experiences/nextg.png", alt="experiences", width="100%", height="200px")
+								.col-lg-9
+									h5
+										strong PT. Generasi Baru Internasional
+									i(style="font-size: small;")  October 2018 - April 2020
+							hr
+							.row
+								.col-lg-12
+									p PT. Generasi Baru is a company engaged in OTA (Online Travel Agent) services.
+									p That I&apos;ve been working on : 
+									ul
+										li Backend for Lion Air E-Ramp
+										li Backend for POS Bangi Sakura
+										li Backend for the BTCT (Baggage Central Tracing Citilink) system for Citilink
+										li Backend for POS Kopi Mantan
+									p
+										i.fa.fa-globe
+										a(href="https://nextgtravel.com/", target="_blank", style="text-decoration: none;")  &amp;nbsp;&amp;nbsp;&amp;nbsp; nextgtravel.com
+									p
+										i.fa.fa-map-marker
+										| &amp;nbsp;&amp;nbsp;&amp;nbsp; Jl. Progo No.22, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241
+					.box.right
+						.content
+							.row
+								.col-lg-3
+									img.img-thumbnail.img-rounded(src="assets/images/experiences/free.png", alt="experiences", width="100%", height="200px")
+								.col-lg-9
+									h5
+										strong Freelance
+									i(style="font-size: small;")  November 2016 - December 2017
+							hr
+							.row
+								.col-lg-12
+									p Experience as a freelancer during college.
+									p That I&apos;ve been working on : 
+									ul
+										li System for courier services from Zimbabwe
+										li SD distribution information system from PT. SYIFAJAYAENERGY
+										li Backend for IPTV (The system is used for realtime editing)
+									p
+										i.fa.fa-globe
+										a(href="#", target="_blank", style="text-decoration: none;")  &amp;nbsp;&amp;nbsp;&amp;nbsp; -
+									p
+										i.fa.fa-map-marker
+										| &amp;nbsp;&amp;nbsp;&amp;nbsp; Yogyakarta
+				// End Portfolio Section
+			// Projects Section
+			// Contact Section
+			#contact.w3-padding-64.w3-content.w3-text-grey
+				h2.w3-text-light-grey Contact Me
+				hr.w3-opacity(style="width:200px")
+				.w3-panel.w3-pale-red.w3-border
+					h3 Sorry!
+					p Cannot use because in under maintenance.
+				br
+				p Let&apos;s get in touch. Send me a message:
+				form(action="/action_page.php", target="_blank")
+					p
+						input.w3-input.w3-padding-16(type="text", placeholder="Name", required, name="Name")
+					p
+						input.w3-input.w3-padding-16(type="text", placeholder="Email", required, name="Email")
+					p
+						input.w3-input.w3-padding-16(type="text", placeholder="Subject", required, name="Subject")
+					// <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+					p
+						textarea.w3-input.w3-padding-16(rows="5", placeholder="Message", required, name="Message")
+					p
+						button.w3-button.w3-light-grey.w3-padding-large(type="submit")
+							i.fa.fa-paper-plane
+							| SEND MESSAGE
+				// End Contact Section
+			// END PAGE CONTENT
+		#id01.w3-modal
+			.w3-modal-content.w3-card-4.w3-animate-zoom.w3-light-grey(style="max-width:400px; border-radius: 5%;")
+				.w3-center
+					br
+					span.w3-button.w3-xlarge.w3-hover-red.w3-display-topright(onclick="document.getElementById('id01').style.display='none'", style="background-color: red; border-radius: 35%;", title="Close Modal") &amp;times;
+					img.w3-circle.w3-margin-top(src="assets/images/users/ava.jpg", alt="Avatar", style="width:100px; height: 100px;")
+				form.w3-container(action="/action_page.php", style="color: black;")
+					.w3-section
+						label
+							b Username
+						input.w3-input.w3-border.w3-margin-bottom(type="text", placeholder="Enter Username", name="username", required)
+						label
+							b Password
+						input.w3-input.w3-border(type="password", placeholder="Enter Password", name="password", required)
+						button.w3-button.w3-block.w3-black.w3-section.w3-padding(type="submit") Login
+				br
+		// Main
+		script(src="assets/js/main.js")

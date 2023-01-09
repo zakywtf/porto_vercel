@@ -4,22 +4,12 @@ const { serviceLandCharacteristic } = require("../helpers/masterFunction")
 
 const IndexController = {
     index: async (req, res) => {
-        if ( req.query.id ) {
-            const rgxVal = new RegExp(req.query.id, 'i');
-            var qry = {
-                $or: [ 
-                    { code: rgxVal }
-                ]
-            };
-            const data = await Webdata.findOne(qry)
-            return apiResponse.successResponseWithData(res, 'Data retrieved', data)
-
-        } else {
-            // res.redirect(301, 'https://idepreneursclub.org')
-            return apiResponse.successResponse(res, 'Index')
-
-        }
+        // res.render('login/login');
+        var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+        // var ip = '36.73.53.127';
+        // var loc = await getGeoLocation(ip, req.useragent)
         
+        res.render('public/index', { datas: {  }});
     },
 
     ping: (req, res) => {
